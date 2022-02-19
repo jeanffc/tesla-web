@@ -92,6 +92,20 @@ main section {
   height: 100vh;
   color: #fff;
   scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+}
+
+#section-model-3 {
+  background-image: url(../img/model-3.jpeg);
+}
+
+#section-model-y {
+  background-image: url(../img/model-y.jpeg);
+}
+
+#section-model-s {
+  background-image: url(../img/model-s.jpeg);
 }
 
 .down-arrow {
