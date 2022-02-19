@@ -1,4 +1,4 @@
-/* start minimal css reset */
+/* css reset */
 
 html {
   box-sizing: border-box;
@@ -30,11 +30,38 @@ img {
   height: auto;
 }
 
-.tesla-icon {
+/* css start */
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-.tesla-text-hidden {
-  -webkit-clip-path: inset(100%);
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  border: unset;
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 0.8rem 0.5rem;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 15rem;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: rgba(48, 48, 48, 0.9);
+}
+
+.btn-light {
+  background-color: rgba(250, 250, 250, 0.9);
+}
+
+.ml {
+  margin-left: 1.5rem;
 }
 
 .header {
@@ -45,7 +72,11 @@ img {
   left: 0;
 }
 
-.nav-section {
+.header .tesla-text-hidden {
+  -webkit-clip-path: inset(100%);
+}
+
+.header .nav-section {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -57,7 +88,7 @@ main {
   scroll-snap-type: y mandatory;
 }
 
-section {
+main section {
   height: 100vh;
   color: #fff;
   scroll-snap-align: start;
