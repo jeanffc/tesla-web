@@ -1,8 +1,34 @@
+/* @import url("http://fonts.cdnfonts.com/css/gotham"); */
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-6-cufonfonts/GothamBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-6-cufonfonts/GothamLight.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-6-cufonfonts/GothamThin.ttf") format("truetype");
+  font-weight: 300;
+}
+
 /* css reset */
 
 html {
   box-sizing: border-box;
   font-size: 16px;
+  line-height: 1rem;
 }
 
 body,
@@ -17,7 +43,6 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
 ol,
@@ -33,31 +58,34 @@ img {
 /* css start */
 
 body {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Gotham", sans-serif;
 }
 
 button {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Gotham", sans-serif;
 }
 
 .btn {
-  border: unset;
-  background-color: rgba(250, 250, 250, 0.9);
-  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(250, 250, 250, 0.85);
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
   border-radius: 5rem;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   min-width: 15rem;
 }
 
 .btn-dark {
   color: #fff;
-  background-color: rgba(48, 48, 48, 0.9);
+  background-color: rgba(48, 48, 48, 0.85);
 }
 
 .btn-light {
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: rgba(250, 250, 250, 0.85);
 }
 
 .ml {
@@ -82,6 +110,37 @@ button {
   padding: 1rem 2rem;
 }
 
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+nav {
+  position: relative;
+  display: flex;
+}
+
+nav a {
+  /* border: 1px solid red; */
+  color: #171a20;
+  text-decoration: none;
+  /* padding: 0.25rem 1rem; */
+  padding: 0.85rem 1rem 0.25rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  border-radius: 0.8rem;
+  transition: 0.85s;
+}
+
+nav a:hover {
+  background-color: rgba(58, 58, 58, 0.2);
+}
+
 main {
   height: 100vh;
   overflow-y: scroll;
@@ -98,8 +157,9 @@ main section {
 }
 
 .down-arrow {
-  bottom: 0;
   position: absolute;
+  bottom: 0;
+  cursor: pointer;
   /*animation: scroll-down 1.5s ease infinite;*/ /* animation not working */
 }
 
@@ -135,7 +195,6 @@ main section {
   color: #393c41;
   font-size: 2.5rem;
   font-weight: 500;
-  margin: 0;
 }
 .content-header p {
   color: #393c41;
