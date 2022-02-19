@@ -1,0 +1,13 @@
+.header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
