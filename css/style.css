@@ -50,3 +50,22 @@ img {
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  color: #fff;
+  scroll-snap-align: start;
+}
+
+.down-arrow {
+  left: 50%;
+  top: 2rem;
+  position: absolute;
+  /*animation: scroll-down 1.5s ease infinite;*/ /* animation not working */
+}
