@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body,
@@ -92,8 +92,15 @@ main section {
   height: 100vh;
   color: #fff;
   scroll-snap-align: start;
+
   background-size: cover;
   background-position: center;
+}
+
+.down-arrow {
+  bottom: 0;
+  position: absolute;
+  /*animation: scroll-down 1.5s ease infinite;*/ /* animation not working */
 }
 
 #section-model-3 {
@@ -108,9 +115,35 @@ main section {
   background-image: url(../img/model-s.jpeg);
 }
 
-.down-arrow {
-  left: 50%;
-  top: 2rem;
-  position: absolute;
-  /*animation: scroll-down 1.5s ease infinite;*/ /* animation not working */
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10rem 0 5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header h2 {
+  color: #393c41;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.content-header p {
+  color: #393c41;
+  font-size: 0.8rem;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
