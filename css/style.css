@@ -44,7 +44,7 @@ button {
 .btn {
   cursor: pointer;
   border: none;
-  background-color: rgba(250, 250, 250, 0.85);
+  background-color: rgba(250, 250, 250, 0.6);
   padding: 0.8rem 0.5rem;
   border-radius: 5rem;
   font-size: 0.8rem;
@@ -55,11 +55,11 @@ button {
 
 .btn-dark {
   color: #fff;
-  background-color: rgba(48, 48, 48, 0.85);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .btn-light {
-  background-color: rgba(250, 250, 250, 0.85);
+  background-color: rgba(250, 250, 250, 0.6);
 }
 
 .ml {
@@ -150,9 +150,11 @@ main section {
 .content {
   height: 100%;
   width: 100%;
+
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+
   padding: 10rem 0 5rem;
   box-sizing: border-box;
   text-align: center;
@@ -171,9 +173,10 @@ main section {
 }
 .content-header p {
   color: #393c41;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
-.content-header p span {
+.content-header p a {
+  color: #393c41;
   text-decoration: underline;
 }
 
