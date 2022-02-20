@@ -1,26 +1,51 @@
 /* @import url("http://fonts.cdnfonts.com/css/gotham"); */
+
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
+  /* src: url("../fonts/Gotham-Font/GothamMedium.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/GothamLight.otf") format("opentype");
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/gotham-6-cufonfonts/GothamBold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/gotham-6-cufonfonts/GothamLight.ttf") format("truetype");
+  /* src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/Gotham-Black.otf") format("opentype");
   font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/gotham-6-cufonfonts/GothamThin.ttf") format("truetype");
+  /* src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/Gotham-Bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  /* src: url("../fonts/Gotham-Font/GothamLight.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/Gotham-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  /* src: url("../fonts/Gotham-Font/GothamThin.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/Gotham-XLight.otf") format("opentype");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  /* src: url("../fonts/Gotham-Font/GothamThin.ttf") format("truetype"), */
+  src: url("../fonts/Gotham-Font/Gotham-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 /* css reset */
@@ -28,7 +53,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 1rem;
+  /* line-height: 1rem; */
 }
 
 body,
@@ -205,4 +230,21 @@ main section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.logo-main,
+.nav-main,
+.nav-sub {
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-main,
+  .nav-sub {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
 }
