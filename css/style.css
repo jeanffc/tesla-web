@@ -1,59 +1,10 @@
-/* @import url("http://fonts.cdnfonts.com/css/gotham"); */
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamMedium.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/GothamLight.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/Gotham-Black.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/Gotham-Bold.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamLight.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/Gotham-Light.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamThin.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/Gotham-XLight.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham";
-  /* src: url("../fonts/Gotham-Font/GothamThin.ttf") format("truetype"), */
-  src: url("../fonts/Gotham-Font/Gotham-Thin.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
 /* css reset */
 
 html {
   box-sizing: border-box;
   font-size: 16px;
-  /* line-height: 1rem; */
 }
 
 body,
@@ -83,20 +34,18 @@ img {
 /* css start */
 
 body {
-  /* font-family: "Raleway", sans-serif; */
-  font-family: "Gotham", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
-  /* font-family: "Raleway", sans-serif; */
-  font-family: "Gotham", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn {
   cursor: pointer;
   border: none;
   background-color: rgba(250, 250, 250, 0.85);
-  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   border-radius: 5rem;
   font-size: 0.8rem;
   font-weight: normal;
@@ -151,11 +100,9 @@ nav {
 }
 
 nav a {
-  /* border: 1px solid red; */
   color: #171a20;
   text-decoration: none;
-  /* padding: 0.25rem 1rem; */
-  padding: 0.85rem 1rem 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 0.85rem;
   line-height: 1.25rem;
   border-radius: 0.8rem;
@@ -220,10 +167,14 @@ main section {
   color: #393c41;
   font-size: 2.5rem;
   font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 .content-header p {
   color: #393c41;
   font-size: 0.8rem;
+}
+.content-header p span {
+  text-decoration: underline;
 }
 
 .content-footer {
