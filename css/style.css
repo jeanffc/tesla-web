@@ -234,3 +234,29 @@ main section {
     flex-direction: column;
   }
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.nav-footer ul {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.nav-footer ul li a {
+  color: #171a20;
+  text-decoration: none;
+
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
