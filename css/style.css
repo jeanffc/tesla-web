@@ -116,13 +116,13 @@ nav {
   background-color: rgba(58, 58, 58, 0.2);
 }
 
-main {
+.main {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-main section {
+.container {
   height: 100vh;
   color: #fff;
   scroll-snap-align: start;
