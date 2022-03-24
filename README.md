@@ -8,7 +8,7 @@ This project uses:
 
 - HTML
 - CSS
-- JavaScript
+- Javascript
 
 ## 🚀 Install
 
